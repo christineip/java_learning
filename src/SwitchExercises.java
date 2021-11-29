@@ -1,10 +1,11 @@
-public class switchExercises {
+public class SwitchExercises {
     public static void main(String[] args) {
-        switchExercises day = new switchExercises();
+        SwitchExercises day = new SwitchExercises();
         //isWeekDay(2);
-        System.out.println(day.determineNameOfDay(6)) ;
+        System.out.println(day.determineNameOfDay(6));
         System.out.println(isWeekDay(7));
     }
+
     public static boolean isWeekDay(int dayNumber) {
         switch (dayNumber) {
             case 1:
@@ -16,6 +17,7 @@ public class switchExercises {
         }
         return false;
     }
+
     public static String determineNameOfDay(int dayNumber) {
         switch (dayNumber) {
             case 1:
@@ -32,7 +34,7 @@ public class switchExercises {
                 return "Saturday";
             case 7:
                 return "Sunday";
-            default :
+            default:
                 return "Invalid day";
         }
     }
