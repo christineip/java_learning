@@ -17,18 +17,29 @@ public class Sop {
         Scanner scanner3 = new Scanner(System.in);
         int operation = scanner3.nextInt();
 
-        int result;
-        if (operation == 1) {
-            result = number1 + number2;
-        } else if (operation == 2) {
-            result = number1 - number2;
-        } else if (operation == 3) {
-            result = number1 / number2;
-        } else {
-            result = number1 * number2;
+        getResult(number1, number2, operation);
+    }
 
+
+    private static void getResult(int number1, int number2, int operation) {
+        switch (operation) {
+            case 1:
+                System.out.println("Result: " + (number1 + number2));
+                break;
+            case 2:
+                System.out.println("Result: " + (number1 - number2));
+                break;
+            case 3:
+                System.out.println("Result: " + (number1 / number2));
+                break;
+
+            case 4:
+                System.out.println("Result: " + (number1 * number2));
+                break;
+            default:
+                System.out.println("Invalid operation");
+                break;
         }
-        System.out.println("Result :"+result);
 
     }
 }
