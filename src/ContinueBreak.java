@@ -13,6 +13,12 @@ System.out.println("---------");
             }
             System.out.println(i);
         }
+do{
+    System.out.println("i am in do");
+
+}
+while(false);
+
 
     }
 
