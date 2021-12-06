@@ -29,31 +29,23 @@ public class MyNumber {
             sum = i + sum;
         }
         return sum;
-
     }
 
     public int sumOfDivisor() {
         int sum = 0;
-
-
         for (int i = 2; i <= number - 1; i++) {
             if (number % i == 0) {
                 sum = i + sum;
             }
         }
-
         return sum;
-
     }
 
     public void printANumberTriangle()
     {
         for(int i=1; i<=number;i++){
-
           for (int count=1; count<=i; count++) {
               System.out.print(count + " ");
-
-
           }System.out.println();
         }
     }
