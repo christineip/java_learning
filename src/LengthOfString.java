@@ -13,5 +13,7 @@ public class LengthOfString {
             System.out.println(someString.charAt(i));
 
         }
+
+        System.out.println(someString.substring(3, 6));
     }
 }
