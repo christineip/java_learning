@@ -6,7 +6,7 @@ public class WhileNumberPlayer {
     }
 
 
-    public void printSquareUpToLimit() {
+    public  void printSquareUpToLimit() {
 
         int i = 1;
 

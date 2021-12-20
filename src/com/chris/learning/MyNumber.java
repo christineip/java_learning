@@ -3,6 +3,7 @@ package com.chris.learning;
 public class MyNumber {
 
     int number;
+    static int staticNum;
 
     public MyNumber(int number) {
         this.number = number;
