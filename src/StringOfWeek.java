@@ -1,11 +1,9 @@
-import java.util.Arrays;
-
 public class StringOfWeek {
     public static void main(String[] args) {
         String[] week = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
         System.out.println(LongestWeek(week));
-        StringOfWeek.PrintBackwardDays(week);
+        System.out.println(PrintBackwardDays(week));
     }
 
     public static String LongestWeek(String[] week) {
@@ -20,14 +18,15 @@ public class StringOfWeek {
         return week[index];
     }
 
-    public static void PrintBackwardDays(String[] week) {
-        String[] reverseWeek = new String[0];
-        for (int i = week.length - 1; i >= 0; i--) {
-            for (int j = 0; j < week.length; j++) {
-                reverseWeek[j] = week[i];
-                System.out.println(Arrays.toString(reverseWeek));
-            }
+    public static String PrintBackwardDays(String[] week) {
+        String[] reverseWeek = new String[week.length];
+        int j=0;
+        for (int i = week.length - 1; i >= 0; i--,j++) {
+
+            reverseWeek[j]=week[i];
+
         }
+        return reverseWeek[j];
 
     }
 
