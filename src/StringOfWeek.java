@@ -6,7 +6,6 @@ public class StringOfWeek {
         System.out.println(LongestWeek(week));
         System.out.println(Arrays.toString(PrintBackwardDays(week)));
     }
-
     public static String LongestWeek(String[] week) {
         int longerWeek = 0;
         int index = 0;
@@ -18,7 +17,6 @@ public class StringOfWeek {
         }
         return week[index];
     }
-
     public static String[] PrintBackwardDays(String[] week) {
         String[] reverseWeek = new String[week.length];
         int j = 0;
@@ -26,7 +24,5 @@ public class StringOfWeek {
             reverseWeek[j] = week[i];
         }
         return reverseWeek;
-
     }
-
 }
