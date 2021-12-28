@@ -18,7 +18,7 @@ public class StringOfWeek {
         return week[index];
     }
 
-    public static String PrintBackwardDays(String[] week) {
+    public static String[] PrintBackwardDays(String[] week) {
         String[] reverseWeek = new String[week.length];
         int j=0;
         for (int i = week.length - 1; i >= 0; i--,j++) {
@@ -26,7 +26,7 @@ public class StringOfWeek {
             reverseWeek[j]=week[i];
 
         }
-        return reverseWeek[j];
+        return reverseWeek;
 
     }
 
