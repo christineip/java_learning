@@ -1,8 +1,12 @@
-public class Person {
+public class Person extends Object {
     private String name;
     private int phone;
     private String email;
 
+    public Person(String name){
+
+        System.out.println("Person Constructor");
+    }
     public String getName() {
         return name;
     }
