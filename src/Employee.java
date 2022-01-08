@@ -1,16 +1,18 @@
 public class Employee extends Person {
-
+    private static final int ID = 1;
+    //constant is having fixed value
     private String title;
     private String employer;
     private String employeeGrade;
     private int salary;
 
-    public Employee(String name){
+    public Employee(String name) {
         //when there is a constructor called, always super class called at the beginning
         super(name);
         System.out.println("Employee Constructor");
 
     }
+
     public String getTitle() {
         return title;
     }
@@ -44,7 +46,7 @@ public class Employee extends Person {
     }
 
     public String toString() {
-        return "employee's name: " + super.getName()+ " employee's email: " + super.getEmail() + " employee's phone: " + super.getPhone() + " title:" + title + " employeeGrade: " + employeeGrade + " employer: " + employer + " salary: " + salary;
+        return "employee's name: " + super.getName() + " employee's email: " + super.getEmail() + " employee's phone: " + super.getPhone() + " title:" + title + " employeeGrade: " + employeeGrade + " employer: " + employer + " salary: " + salary;
     }
 }
 
