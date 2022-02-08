@@ -1,9 +1,7 @@
 public class InheritanceDemo {
 
 }
-class A{
 
-}
 class B{
 
 }
