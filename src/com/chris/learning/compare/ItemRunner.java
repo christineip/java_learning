@@ -26,7 +26,6 @@ public class ItemRunner {
         System.out.println(itemList);
         //Collections.sort(itemList);
 
-
         Collections.sort(itemList,Collections.reverseOrder());
         System.out.println(itemList);*/
         System.out.println(itemList);
