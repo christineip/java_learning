@@ -1,4 +1,4 @@
-package com.chris.learning;
+package com.chris.learning.watch;
 
 public class Cat implements  Watch{
 

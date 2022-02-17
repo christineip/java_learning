@@ -1,5 +1,7 @@
 package com.chris.learning.employee_compare;
 
+import java.util.Objects;
+
 public class Employee implements Comparable<Employee> {
     private String employeeName;
     private int employeeSalary;
@@ -71,4 +73,19 @@ public class Employee implements Comparable<Employee> {
                 ", employeeRating=" + employeeRating +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return employeeSalary == employee.employeeSalary && employeeCode == employee.employeeCode && employeeRating == employee.employeeRating && Objects.equals(employeeName, employee.employeeName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(employeeName, employeeSalary, employeeCode, employeeRating);
+    }
+
+
 }
