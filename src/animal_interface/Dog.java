@@ -7,8 +7,5 @@ public class Dog implements Animal{
         return "Woof woof";
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

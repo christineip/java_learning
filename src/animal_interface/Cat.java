@@ -5,7 +5,7 @@ public class Cat implements Animal{
 
     public String Sound() {
 
-        return "meow meow";
+        return "Meow meow";
     }
 
 
