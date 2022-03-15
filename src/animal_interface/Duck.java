@@ -5,6 +5,4 @@ public class Duck implements Animal {
     public String Sound() {
         return "Quack quack";
     }
-
-
 }
