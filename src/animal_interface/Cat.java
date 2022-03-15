@@ -1,12 +1,8 @@
 package animal_interface;
 
-public class Cat implements Animal{
+public class Cat implements Animal {
     @Override
-
     public String Sound() {
-
         return "Meow meow";
     }
-
-
 }
