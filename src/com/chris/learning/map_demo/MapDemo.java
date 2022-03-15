@@ -11,7 +11,7 @@ public class MapDemo {
         Map<Integer, String> worldMap = new HashMap<>();
         worldMap.put(1, "Dubai");
         worldMap.put(2, "Maldives");
-        System.out.println(worldMap.get(1));
+      //  System.out.println(worldMap.get(1));
         worldMap.keySet();
         worldMap.values();
 
@@ -22,7 +22,7 @@ public class MapDemo {
         capitalMap.put("Korea", "Seoul");
         capitalMap.put("Japan", "Tokyo");
         capitalMap.put("France", "Paris");
-        System.out.println(capitalMap);
+       // System.out.println(capitalMap);
 
         Set<String> country = new HashSet<>();
         country.add("China");
